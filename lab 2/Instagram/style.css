@@ -1,0 +1,145 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    margin-left: 200px;  
+}
+.logo-tele{
+    padding-top: 100px;  
+    float: right;
+    margin: 10px;
+    height: 650px;      
+    margin-left: 200px;
+    margin-top: -35px;
+    
+}
+.insta-logo{
+    margin-left: 30px; 
+    margin-top: 65px;
+}
+body{
+    background-color: white;
+
+}
+.main-logo{
+    align-items: center;
+    border: 1px solid ;  
+    color: rgba(219,219,219);
+    border-radius: 1px;  
+    margin: 0 0 10px;   
+    padding: 10px 0;   
+    width: 350px;
+    height: 375px;
+    text-align: center;
+}
+.text{
+    margin: 15px auto;  
+}
+.create-acc{
+    text-align: center;
+    border: 1px solid #dbdbdb;  
+    border-radius: 1px;
+    width: 350px;
+    height: 67px;
+    padding-top: 25px;
+    font-size: 15px;
+    color: #262626ef;      
+    line-height: 20px;
+}
+.create-acc a{                    
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+
+}
+.input{                        
+    font-size: 12px;
+    width: 268px;
+    height: 38px;
+    border: 1px solid;
+    color:rgb(209, 209, 209);
+    border-radius: 4px;
+    align-items: center;
+    margin: 4px;
+    padding: 5px 10px;
+}
+.login-button{
+    margin-top: 10px;
+    width: 268px;
+    height: 30px;
+    font-weight: bold;
+    pointer-events: none;
+    color: white;
+    background-color: #2676ff;
+    border: 1px solid transparent;;
+    border-radius: 4px;
+}
+.or{
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 5px 18px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.line{
+    background-color: rgba(219,219,219);
+    height: 1px;
+    position: relative;
+    padding-bottom: 1px;
+    width: 110px;
+    display: inline-block;
+}
+.text-line{
+    display: inline-block;
+    margin: 10px;
+}
+.facebook{
+    display: flex;
+    color: #8e8e8e;
+    text-decoration:none;
+}
+
+.password{                  
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.words{
+    text-align: center;    
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.76);
+}
+.words img{
+    width: 130px;
+    height: 40px;
+    margin: 18px 5px;
+}
+.fooster{
+    width: 1200px;
+    margin-left: -1000px;
+    margin-top: 700px;
+    text-align: center;
+}
+
+.footers a{
+    color:#848484;   
+    margin: 6px 6px 0px 6px; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.footers a:hover{
+    text-decoration: underline;
+}
+.footers p{                    
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #848484;
+}
