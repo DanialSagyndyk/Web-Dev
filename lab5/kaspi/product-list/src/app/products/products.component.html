@@ -1,0 +1,43 @@
+<h2 class="catalog-title">Каталог товаров</h2>
+
+<div class = 'category-buttons'>
+  <label for="category">Выбери категорию:</label>
+  <select id="category" (change) = "selectCategory($event)">
+    <option *ngFor = "let category of categories" [value]="category">
+      {{category}}
+    </option>
+  </select>
+</div>
+
+
+
+<div class="products-container">
+  <div class="product-card" *ngFor="let product of getfilteredProducts()">
+    <div class="gallery">
+      <img [src]="product.imageUrls[0]" alt="{{ product.name }}">
+    </div>
+    <h3>{{ product.name }}</h3>
+    <div class="rating-likes">
+    <p>{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+    <p>❤️ {{ product.likes }}</p>
+    </div>
+    <a [href]="product.link" target="_blank" >Подробнее</a>
+
+  
+    <div class="action-buttons">
+      <button class="like-button" (click)="likeProduct(product.id)">👍 Like</button>
+      <button class="remove-button" (click)="removeProduct(product.id)">🗑 Remove</button>
+    </div>
+
+    <div class="share-buttons">
+      <button (click)="shareOnWhatsApp('+77756553005',product.link)">
+        📱 Поделиться в WhatsApp
+      </button>
+
+      <button (click)="shareOnTelegram('odinelit', product.link)">
+        📩 Поделиться в Telegram
+      </button>
+    </div>
+  </div>
+</div>
