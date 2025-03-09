@@ -1,0 +1,41 @@
+.task-detail {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-detail h2 {
+  margin: 0 0 16px;
+  font-size: 1.75rem;
+  color: #333333;
+}
+
+.task-detail p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.task-detail strong {
+  color: #333333;
+}
+
+.task-detail button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  margin-top: 16px;
+}
+
+.task-detail button:hover {
+  background-color: #5a6268;
+}

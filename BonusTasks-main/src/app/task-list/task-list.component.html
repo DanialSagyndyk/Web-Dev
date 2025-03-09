@@ -1,0 +1,38 @@
+<div class="task-list">
+  <h1>Задача Алдияра</h1>
+
+  <div class="task-form">
+    <h2>{{ isEditing ? 'Edit Task' : 'Add New Task' }}</h2>
+    <input [(ngModel)]="newTask.title" placeholder="Title" />
+    <textarea [(ngModel)]="newTask.description" placeholder="Description"></textarea>
+    <select [(ngModel)]="newTask.category">
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Study">Study</option>
+    </select>
+    <input type="date" [(ngModel)]="newTask.deadline" />
+    <button (click)="isEditing ? updateTask() : addTask()">
+      {{ isEditing ? 'Update Task' : 'Add Task' }}
+    </button>
+    <button *ngIf="isEditing" (click)="resetForm()">Cancel</button>
+  </div>
+
+
+  <div class="tasks">
+    <div *ngFor="let task of tasks" class="task-item">
+      <app-task-item
+        [title]="task.title"
+        [description]="task.description"
+        [category]="task.category"
+        [status]="task.status"
+        [deadline]="task.deadline"
+        (taskCompleted)="onTaskCompleted(task.id)"
+        [routerLink]="['/task', task.id]"
+      ></app-task-item>
+      <div class="task-actions">
+        <button (click)="editTask(task.id)">Edit</button>
+        <button (click)="deleteTask(task.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
